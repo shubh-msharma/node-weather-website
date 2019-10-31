@@ -22,7 +22,7 @@ document.querySelector('form').addEventListener('submit',(e)=>{
         <div id="fountainG_7" class="fountainG"></div>
         <div id="fountainG_8" class="fountainG"></div>
     </div>`
-        fetch("http://localhost:3000/weather?address="+encodeURIComponent(loc))
+        fetch("/weather?address="+encodeURIComponent(loc))
     .then(res=>{
         res.json()
         .then(data=>{
