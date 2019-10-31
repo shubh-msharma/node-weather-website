@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>weather app</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/loader.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-arround">
+            <div class="col-sm-2">
+                <h2>PortFolio</h2>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                {{>header}}
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        {{>title}}
+        <div id="weather" class="row justify-content-center">
+            <div class="col-5">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">mousam ki jankari yaha se prapt kre</div>
+                        <div class="card-body">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="enter location">
+                                </div>
+                                <button type="submit" class="btn btn-block btn-primary btn-md">search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="list"></div>
+        </div>
+        
+    </div>
+    <script src="./js/client.js"></script>
+</body>
+
+</html>
